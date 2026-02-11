@@ -1,0 +1,55 @@
+{
+  "generated_at": "2025-01-12T08:00:00+00:00",
+  "source_digest": {
+    "sources": [
+      {
+        "domain": "infomoney.com.br",
+        "url": "https://www.infomoney.com.br/ultimas-noticias/"
+      }
+    ],
+    "notes": "Sample digest fixture."
+  },
+  "items": [
+    {
+      "headline": "Copom sinaliza manutenção da Selic e mercado revê cenário para 2025",
+      "published_at": "2025-01-10T12:00:00+00:00",
+      "category": "selic",
+      "theme": "selic_juros",
+      "key_facts": [
+        "Copom sinaliza manutenção da Selic"
+      ],
+      "url": "https://www.infomoney.com.br/economia/copom-selic-cenario-2025/",
+      "source": "InfoMoney",
+      "advisor_opportunity_angle": "Abrir conversa sobre proteção e revisão de estratégia em juros."
+    },
+    {
+      "headline": "IPCA acima do esperado reacende debate sobre inflação de serviços",
+      "published_at": "2025-01-10T13:00:00+00:00",
+      "category": "inflacao",
+      "theme": "inflacao",
+      "key_facts": [
+        "IPCA acima do esperado"
+      ],
+      "url": "https://www.infomoney.com.br/economia/ipca-inflacao-servicos/",
+      "source": "InfoMoney",
+      "advisor_opportunity_angle": "Educar cliente sobre impactos de inflação no planejamento."
+    },
+    {
+      "headline": "Dólar avança com ruído fiscal e cautela sobre trajetória da dívida",
+      "published_at": "2025-01-10T14:00:00+00:00",
+      "category": "dolar",
+      "theme": "dolar_fx",
+      "key_facts": [
+        "Dólar avança com ruído fiscal"
+      ],
+      "url": "https://www.infomoney.com.br/mercados/dolar-ruido-fiscal-divida/",
+      "source": "InfoMoney",
+      "advisor_opportunity_angle": "Conectar câmbio a decisões de alocação sem indicar ativos."
+    }
+  ],
+  "top_themes": [
+    "dolar_fx",
+    "inflacao",
+    "selic_juros"
+  ]
+}

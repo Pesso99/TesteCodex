@@ -1,0 +1,54 @@
+{
+  "generated_at": "2025-01-12T08:05:00+00:00",
+  "source_digest": {
+    "sources": [
+      {
+        "domain": "infomoney.com.br",
+        "url": "https://www.infomoney.com.br/ultimas-noticias/"
+      }
+    ],
+    "notes": "Sample digest fixture."
+  },
+  "items": [
+    {
+      "headline": "Ibovespa sobe puxado por bancos após leitura de atividade no Brasil",
+      "published_at": "2025-01-10T15:00:00+00:00",
+      "category": "bolsa",
+      "theme": "bolsa_acoes",
+      "key_facts": [
+        "Ibovespa sobe puxado por bancos"
+      ],
+      "url": "https://www.infomoney.com.br/mercados/ibovespa-bancos-atividade/",
+      "source": "InfoMoney",
+      "advisor_opportunity_angle": "Retomar clientes inativos com leitura de cenário de bolsa."
+    },
+    {
+      "headline": "Empresa do setor de varejo divulga resultado acima do consenso do mercado",
+      "published_at": "2025-01-10T18:00:00+00:00",
+      "category": "empresas",
+      "theme": "empresas",
+      "key_facts": [
+        "Resultado acima do consenso"
+      ],
+      "url": "https://www.infomoney.com.br/mercados/empresa-varejo-resultado-consenso/",
+      "source": "InfoMoney",
+      "advisor_opportunity_angle": "Usar temporada de resultados para conversas de retenção."
+    },
+    {
+      "headline": "Grandes bancos apresentam lucro robusto e reforçam guidance para o ano",
+      "published_at": "2025-01-11T11:00:00+00:00",
+      "category": "empresas",
+      "theme": "empresas",
+      "key_facts": [
+        "Lucro robusto dos bancos"
+      ],
+      "url": "https://www.infomoney.com.br/mercados/bancos-lucro-guidance/",
+      "source": "InfoMoney",
+      "advisor_opportunity_angle": "Transformar resultado corporativo em conversa consultiva."
+    }
+  ],
+  "top_themes": [
+    "bolsa_acoes",
+    "empresas"
+  ]
+}

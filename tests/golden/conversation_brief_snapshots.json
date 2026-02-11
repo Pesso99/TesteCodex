@@ -1,0 +1,107 @@
+[
+  {
+    "input": {
+      "market_theme": "selic_juros",
+      "archetype": "Conservador",
+      "goal": "captar"
+    },
+    "expected": {
+      "advisor_goal": "captar",
+      "market_theme": "selic_juros",
+      "archetype": "Conservador",
+      "whatsapp_opening": "Olá! Vi um movimento recente sobre selic juros e pensei em você. Posso te mostrar em 2 minutos como isso pode impactar seu planejamento?",
+      "first_talking_point": "Contexto do tema selic_juros: o que mudou e por que isso importa agora.",
+      "first_objection": "prefiro esperar",
+      "cta": "Podemos agendar uma conversa de 15 minutos amanhã?",
+      "follow_up_days": [
+        "D+1",
+        "D+3"
+      ],
+      "compliance_disclaimer": "Material informativo e educacional; não constitui recomendação de investimento."
+    }
+  },
+  {
+    "input": {
+      "market_theme": "inflacao",
+      "archetype": "Renda Passiva",
+      "goal": "educar"
+    },
+    "expected": {
+      "advisor_goal": "educar",
+      "market_theme": "inflacao",
+      "archetype": "Renda Passiva",
+      "whatsapp_opening": "Olá! Vi um movimento recente sobre inflacao e pensei em você. Posso te mostrar em 2 minutos como isso pode impactar seu planejamento?",
+      "first_talking_point": "Contexto do tema inflacao: o que mudou e por que isso importa agora.",
+      "first_objection": "a renda pode cair?",
+      "cta": "Podemos agendar uma conversa de 15 minutos amanhã?",
+      "follow_up_days": [
+        "D+1",
+        "D+3"
+      ],
+      "compliance_disclaimer": "Material informativo e educacional; não constitui recomendação de investimento."
+    }
+  },
+  {
+    "input": {
+      "market_theme": "dolar_fx",
+      "archetype": "Growth",
+      "goal": "reativar"
+    },
+    "expected": {
+      "advisor_goal": "reativar",
+      "market_theme": "dolar_fx",
+      "archetype": "Growth",
+      "whatsapp_opening": "Olá! Vi um movimento recente sobre dolar fx e pensei em você. Posso te mostrar em 2 minutos como isso pode impactar seu planejamento?",
+      "first_talking_point": "Contexto do tema dolar_fx: o que mudou e por que isso importa agora.",
+      "first_objection": "já subiu demais",
+      "cta": "Podemos agendar uma conversa de 15 minutos amanhã?",
+      "follow_up_days": [
+        "D+1",
+        "D+3"
+      ],
+      "compliance_disclaimer": "Material informativo e educacional; não constitui recomendação de investimento."
+    }
+  },
+  {
+    "input": {
+      "market_theme": "bolsa_acoes",
+      "archetype": "Alta Renda",
+      "goal": "retenção"
+    },
+    "expected": {
+      "advisor_goal": "retenção",
+      "market_theme": "bolsa_acoes",
+      "archetype": "Alta Renda",
+      "whatsapp_opening": "Olá! Vi um movimento recente sobre bolsa acoes e pensei em você. Posso te mostrar em 2 minutos como isso pode impactar seu planejamento?",
+      "first_talking_point": "Contexto do tema bolsa_acoes: o que mudou e por que isso importa agora.",
+      "first_objection": "isso otimiza meu patrimônio total?",
+      "cta": "Podemos agendar uma conversa de 15 minutos amanhã?",
+      "follow_up_days": [
+        "D+1",
+        "D+3"
+      ],
+      "compliance_disclaimer": "Material informativo e educacional; não constitui recomendação de investimento."
+    }
+  },
+  {
+    "input": {
+      "market_theme": "commodities",
+      "archetype": "Trader",
+      "goal": "alocar"
+    },
+    "expected": {
+      "advisor_goal": "alocar",
+      "market_theme": "commodities",
+      "archetype": "Trader",
+      "whatsapp_opening": "Olá! Vi um movimento recente sobre commodities e pensei em você. Posso te mostrar em 2 minutos como isso pode impactar seu planejamento?",
+      "first_talking_point": "Contexto do tema commodities: o que mudou e por que isso importa agora.",
+      "first_objection": "sinal está atrasado",
+      "cta": "Podemos agendar uma conversa de 15 minutos amanhã?",
+      "follow_up_days": [
+        "D+1",
+        "D+3"
+      ],
+      "compliance_disclaimer": "Material informativo e educacional; não constitui recomendação de investimento."
+    }
+  }
+]

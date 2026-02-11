@@ -1,0 +1,50 @@
+[
+  {
+    "input": {
+      "market_theme": "selic_juros",
+      "archetype": "Conservador",
+      "advisor_goal": "retenção"
+    },
+    "output": {
+      "opening_line": "Olá! Vi um movimento recente sobre selic juros e pensei em você. Posso te mostrar em 2 minutos como isso pode impactar seu planejamento?",
+      "talking_points": [
+        "Contexto do tema selic_juros e efeito em previsibilidade.",
+        "Impacto em preservação de capital e liquidez.",
+        "Revisão de estratégia sem mudanças bruscas."
+      ],
+      "cta": "Podemos agendar 15 minutos amanhã para revisar cenários?"
+    }
+  },
+  {
+    "input": {
+      "market_theme": "inflacao",
+      "archetype": "Renda Passiva",
+      "advisor_goal": "educar"
+    },
+    "output": {
+      "opening_line": "Notei atualização sobre inflação que afeta renda real dos investimentos.",
+      "talking_points": [
+        "Como inflação corrói fluxo de caixa.",
+        "Alternativas de organização para renda mensal.",
+        "Plano simples para acompanhar resultado real."
+      ],
+      "cta": "Posso te enviar um resumo com 2 cenários e marcamos uma conversa?"
+    }
+  },
+  {
+    "input": {
+      "market_theme": "empresas",
+      "archetype": "Alta Renda",
+      "advisor_goal": "captar"
+    },
+    "output": {
+      "opening_line": "Saiu notícia relevante de empresas e pode abrir oportunidade de conversa patrimonial.",
+      "talking_points": [
+        "Leitura de cenário corporativo sem tese de ativo específico.",
+        "Relação com eficiência tributária e proteção patrimonial.",
+        "Próximo passo com visão de portfólio consolidada."
+      ],
+      "cta": "Faz sentido uma call de 20 minutos para alinharmos prioridades?"
+    }
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ConversationBrief",
+  "type": "object",
+  "required": [
+    "generated_at",
+    "advisor_goal",
+    "market_theme",
+    "archetype",
+    "channel_opening",
+    "talking_points",
+    "objections_and_responses",
+    "cta",
+    "follow_up_sequence",
+    "compliance_disclaimer"
+  ],
+  "properties": {
+    "generated_at": {"type": "string", "format": "date-time"},
+    "advisor_goal": {"type": "string", "enum": ["captar", "reativar", "educar", "alocar", "retenção"]},
+    "market_theme": {"type": "string"},
+    "archetype": {"type": "string"},
+    "channel_opening": {
+      "type": "object",
+      "required": ["whatsapp", "email", "call"],
+      "properties": {
+        "whatsapp": {"type": "string"},
+        "email": {"type": "string"},
+        "call": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "talking_points": {"type": "array", "items": {"type": "string"}, "minItems": 3, "maxItems": 3},
+    "objections_and_responses": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["objection", "response"],
+        "properties": {
+          "objection": {"type": "string"},
+          "response": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "cta": {"type": "string"},
+    "follow_up_sequence": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["day", "message"],
+        "properties": {
+          "day": {"type": "string"},
+          "message": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "compliance_disclaimer": {"type": "string"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClientArchetype",
+  "type": "object",
+  "required": ["name", "typical_concerns", "objections", "preferred_language", "risk_tolerance_cues"],
+  "properties": {
+    "name": {"type": "string", "enum": ["Conservador", "Renda Passiva", "Growth", "Alta Renda", "Trader"]},
+    "typical_concerns": {"type": "array", "items": {"type": "string"}, "minItems": 2},
+    "objections": {"type": "array", "items": {"type": "string"}, "minItems": 2},
+    "preferred_language": {"type": "string"},
+    "risk_tolerance_cues": {"type": "string"}
+  },
+  "additionalProperties": false
+}
