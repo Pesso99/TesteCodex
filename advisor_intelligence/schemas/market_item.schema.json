@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MarketItem",
+  "type": "object",
+  "required": [
+    "headline",
+    "published_at",
+    "category",
+    "theme",
+    "key_facts",
+    "url",
+    "source",
+    "advisor_opportunity_angle"
+  ],
+  "properties": {
+    "headline": {"type": "string", "minLength": 10},
+    "published_at": {"type": "string", "format": "date-time"},
+    "category": {"type": "string"},
+    "theme": {"type": "string"},
+    "key_facts": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "url": {"type": "string", "format": "uri"},
+    "source": {"type": "string"},
+    "advisor_opportunity_angle": {"type": "string"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MarketDigest",
+  "type": "object",
+  "required": ["generated_at", "source_digest", "items", "top_themes"],
+  "properties": {
+    "generated_at": {"type": "string", "format": "date-time"},
+    "source_digest": {
+      "type": "object",
+      "required": ["sources", "notes"],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["domain", "url"],
+            "properties": {
+              "domain": {"type": "string"},
+              "url": {"type": "string", "format": "uri"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "items": {
+      "type": "array",
+      "items": {"$ref": "market_item.schema.json"}
+    },
+    "top_themes": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
