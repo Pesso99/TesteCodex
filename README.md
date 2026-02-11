@@ -29,6 +29,7 @@ advisor_intelligence/
     parser.py
     classifier.py
     digest.py
+    fixtures.py
   profiling/
     __init__.py
     archetypes.py
@@ -46,20 +47,49 @@ advisor_intelligence/
     daily_plan.schema.json
   examples/
     examples_ptbr.json
+fixtures/
+  market_items/
+  market_digests/
 tests/
+  golden/
   test_market_parser.py
   test_schema_validation.py
+  test_offline_smoke.py
+  test_golden_outputs.py
 ```
 
-## 3) Como rodar
+## 3) Modos de fonte (Market Radar)
+
+`build_market_digest` e CLI suportam três modos com `--source-mode` (ou env `ADVISOR_SOURCE_MODE`):
+
+- `live`: busca apenas online (erro de rede é propagado).
+- `offline`: usa apenas fixtures locais em `fixtures/market_items`.
+- `mixed`: tenta online e faz fallback para fixtures locais (padrão atual).
+
+## 4) Como rodar
 
 ```bash
 python -m pip install -e .[dev]
-python -m advisor_intelligence.cli --goal captar --archetype Conservador --limit 8
+python -m advisor_intelligence.cli --goal captar --archetype Conservador --limit 8 --source-mode mixed
 pytest
 ```
 
-## 4) TODOs planejados (futuras integrações)
+## 5) Pack de testes offline-first
+
+Para validar de forma confiável sem internet/proxy:
+
+```bash
+python -m advisor_intelligence.cli --goal captar --archetype Conservador --limit 5 --source-mode offline
+pytest tests/test_offline_smoke.py tests/test_golden_outputs.py
+```
+
+O pack inclui:
+- Fixtures de `MarketItem` (20 amostras cobrindo macro, bolsa, empresas, fundos, previdência).
+- 3 `MarketDigest` de referência.
+- Casos de borda: data ausente, manchete incomum, manchete duplicada, manchete muito longa.
+- Smoke test end-to-end offline e snapshots (golden tests) para 5 entradas fixas.
+
+## 6) TODOs planejados (futuras integrações)
 - Conector CRM para substituir placeholders no `DailyPlan`.
 - Ingestão de posições/carteira para enriquecer prioridade por relevância.
 - Camada de compliance customizada por instituição.

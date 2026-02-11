@@ -1,0 +1,54 @@
+{
+  "generated_at": "2025-01-12T08:10:00+00:00",
+  "source_digest": {
+    "sources": [
+      {
+        "domain": "infomoney.com.br",
+        "url": "https://www.infomoney.com.br/ultimas-noticias/"
+      }
+    ],
+    "notes": "Sample digest fixture."
+  },
+  "items": [
+    {
+      "headline": "Fundos imobiliários têm pregão misto com giro acima da média semanal",
+      "published_at": "2025-01-10T19:00:00+00:00",
+      "category": "fundos",
+      "theme": "fundos",
+      "key_facts": [
+        "Pregão misto em FIIs"
+      ],
+      "url": "https://www.infomoney.com.br/onde-investir/fiis-giro-acima-media/",
+      "source": "InfoMoney",
+      "advisor_opportunity_angle": "Educar sobre renda passiva e volatilidade de fundos."
+    },
+    {
+      "headline": "Previdência privada volta ao radar após mudanças em regras de tributação",
+      "published_at": "2025-01-10T20:00:00+00:00",
+      "category": "previdencia",
+      "theme": "previdencia",
+      "key_facts": [
+        "Mudanças em tributação"
+      ],
+      "url": "https://www.infomoney.com.br/minhas-financas/previdencia-privada-tributacao/",
+      "source": "InfoMoney",
+      "advisor_opportunity_angle": "Abrir conversa de longo prazo para retenção."
+    },
+    {
+      "headline": "Fundo multimercado reduz exposição e enfrenta nova rodada de resgates",
+      "published_at": "2025-01-11T11:30:00+00:00",
+      "category": "fundos",
+      "theme": "fundos",
+      "key_facts": [
+        "Nova rodada de resgates"
+      ],
+      "url": "https://www.infomoney.com.br/onde-investir/fundo-multimercado-resgates/",
+      "source": "InfoMoney",
+      "advisor_opportunity_angle": "Reforçar acompanhamento ativo e alinhamento de expectativa."
+    }
+  ],
+  "top_themes": [
+    "fundos",
+    "previdencia"
+  ]
+}

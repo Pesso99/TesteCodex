@@ -9,8 +9,8 @@ from advisor_intelligence.planner import build_daily_plan
 from advisor_intelligence.profiling import get_archetype_profile
 
 
-def run(goal: str, archetype_name: str, limit: int) -> dict:
-    digest = build_market_digest(advisor_goal=goal, limit=limit)
+def run(goal: str, archetype_name: str, limit: int, source_mode: str | None = None) -> dict:
+    digest = build_market_digest(advisor_goal=goal, limit=limit, source_mode=source_mode)
     archetype = get_archetype_profile(archetype_name)
 
     briefs = [
@@ -31,9 +31,15 @@ def main() -> None:
     parser.add_argument("--goal", default="captar", choices=["captar", "reativar", "educar", "alocar", "retenção"])
     parser.add_argument("--archetype", default="Conservador")
     parser.add_argument("--limit", type=int, default=8)
+    parser.add_argument(
+        "--source-mode",
+        default=None,
+        choices=["live", "offline", "mixed"],
+        help="Modo da fonte do Market Radar. Se omitido, usa ADVISOR_SOURCE_MODE ou mixed.",
+    )
     args = parser.parse_args()
 
-    output = run(goal=args.goal, archetype_name=args.archetype, limit=args.limit)
+    output = run(goal=args.goal, archetype_name=args.archetype, limit=args.limit, source_mode=args.source_mode)
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
 

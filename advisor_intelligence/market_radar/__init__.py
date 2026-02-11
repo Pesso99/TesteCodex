@@ -1,3 +1,3 @@
-from .digest import build_market_digest
+from .digest import build_market_digest, resolve_source_mode
 
-__all__ = ["build_market_digest"]
+__all__ = ["build_market_digest", "resolve_source_mode"]
